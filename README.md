@@ -84,7 +84,7 @@ This indicates that for example the graph
 K~~~vnnv|~n~
 ```
 
-is a 12-vertex graph with girth 3 in which every vertex has degree 10 and each edge is contained in 8 pairwise distinct cycles of length 3 (i.e. an $egr(12,10,3,8)$ graph. Another example is the graph:
+is a 12-vertex graph with girth 3 in which every vertex has degree 10 and each edge is contained in 8 pairwise distinct cycles of length 3 (i.e. an $egr(12,10,3,8)$ graph). Another example is the graph:
 ```bash
 Ls`?XGRQR@B`Kc
 ```
