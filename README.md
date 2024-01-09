@@ -1,15 +1,19 @@
-# H-coloring 4-regular graphs
+# Exhaustive generation of edge-girth-regular graphs
 
-This repository contains code and data related to the paper "A note on $\bar{X}$-coloring and $\hat{A}$-coloring 4-regular graphs". All code can be found in the directory "Code", whereas all data can be found in the directory "Data".
+This repository contains code and data related to the paper "Exhaustive generation of edge-girth-regular graphs". All code can be found in the directory "Code", whereas all data can be found in the directory "Data".
+
+For integers $v$, $k$, $g$ and $\lambda$ an $egr(v,k,g,\lambda)$ graph is a $k$-regular graph with girth $g$ on $v$ vertices such that every edge is contained in exactly $\lambda$ cycles of length $g$.
 
 Below, we briefly describe the different programs and data.
 
 ## DATA
-This folders contains two files each containing a graph in graph6 format. The file "planar4Regular18Vertices.g6" contains the graph shown in Fig. 2 from the paper "A note on $\bar{X}$-coloring and $\hat{A}$-coloring 4-regular graphs". This graph provides a negative answer to Questions 1.2 and 1.3 from that paper. The file "lineGraphTietze.g6" contains the line graph of the Tietze graph. This graph is a counterexample to Conjecture 21 from "Malnegro, Analen A., and Kenta Ozeki. H-colorings for 4-regular graphs. Discrete Mathematics 347.3 (2024): 113844."
+Describe data here
 
 ## CODE
 
-### filterDoesNotHaveXBarColoring.cpp
+### abc.cpp
+
+Describe different programs here
 
 The program can be compiled by executing the following command:
 ```bash
