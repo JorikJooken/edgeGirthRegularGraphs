@@ -491,7 +491,7 @@ void recursivelyAddEdges(struct graph* g, int iteration)
         }
         if(shouldOutput)
         {
-            fprintf(stderr,"Writing graph6 string\n");
+            //fprintf(stderr,"Writing graph6 string\n");
             writeToG6(g->nautyGraph,n);
         }
         return;
@@ -765,13 +765,13 @@ int main(int argc, char ** argv) {
     r=atoi(argv[2]);
     girthRequired=atoi(argv[3]);
     lambda=atoi(argv[4]);
-    printf("Computation started for n, r, g and lambda: %d %d %d %d\n",n,r,girthRequired,lambda);
+    fprintf(stderr,"Computation started for v, k, g and lambda: %d %d %d %d\n",n,r,girthRequired,lambda);
     if(r>MAXR)
     {
         fprintf(stderr,"r is too big!\n");
         exit(0);
     }
-    fprintf(stderr,"n, r, girthRequired and lambda: %d %d %d %d\n",n,r,girthRequired,lambda);
+    //fprintf(stderr,"n, r, girthRequired and lambda: %d %d %d %d\n",n,r,girthRequired,lambda);
     struct graph g = {.numberOfVertices = n};
     g.adjacencyList = malloc(sizeof(bitset)*n);
     g.verticesOfDeg = malloc(sizeof(bitset)*n);
@@ -786,7 +786,7 @@ int main(int argc, char ** argv) {
     {
         add(verticesWithCorrectDegree,i);
     }
-    for(int i=0; i<n; i++)
+    /*for(int i=0; i<n; i++)
     {
         fprintf(stderr,"Neighbors of %d:\n",i);
         forEach(neigh,g.adjacencyList[i])
@@ -795,7 +795,7 @@ int main(int argc, char ** argv) {
         }
         fprintf(stderr,"\n");
     }
-    fprintf(stderr,"StartLeaf: %d\n",startLeaf);
+    fprintf(stderr,"StartLeaf: %d\n",startLeaf);*/
     for(int i=0; i<n; i++)
     {
         for(int j=0; j<n; j++)
@@ -842,7 +842,7 @@ int main(int argc, char ** argv) {
         }
         fprintf(stderr,"\n");
     }*/
-    printf("Computation finished for n, r, g and lambda: %d %d %d %d\n",n,r,girthRequired,lambda);
+    fprintf(stderr,"Computation finished for v, k, g and lambda: %d %d %d %d\n",n,r,girthRequired,lambda);
     free(g.adjacencyList);
     free(g.verticesOfDeg);
     return 0;
