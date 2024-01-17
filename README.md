@@ -1,6 +1,6 @@
 # Exhaustive generation of edge-girth-regular graphs
 
-This repository contains code and data related to the paper "Exhaustive generation of edge-girth-regular graphs". All code can be found in the directory "Code", whereas all data can be found in the directory "Data".
+This repository contains code and data related to the paper "Exhaustive generation of edge-girth-regular graphs" (available on [arXiv](https://arxiv.org/abs/2401.08271)). All code can be found in the directory "Code", whereas all data can be found in the directory "Data".
 
 For integers $v$, $k$, $g$ and $\lambda$ an $egr(v,k,g,\lambda)$ graph is a $k$-regular graph with girth $g$ on $v$ vertices such that every edge is contained in exactly $\lambda$ cycles of length $g$.
 
